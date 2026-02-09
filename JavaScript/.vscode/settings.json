@@ -1,0 +1,203 @@
+{
+	"liveServer.settings.donotShowInfoMsg": true,
+	"workbench.editorAssociations": {
+		"*.html": "default"
+	},
+	"bootstrapIntelliSense.version": "Bootstrap v5.3",
+	"editor.linkedEditing": true,
+	// "[html]": {
+	// 	"editor.defaultFormatter": "vscode.html-language-features"
+	// },
+
+	"editor.fontLigatures": true,
+	"editor.fontVariations": false,
+	"editor.fontFamily": "fira code",
+	"editor.fontSize": 19,
+	"editor.fontWeight": "normal",
+	"editor.suggest.filterGraceful": false,
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorBlinking": "expand",
+	"editor.lineHeight": 29,
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.stickyScroll.enabled": false,
+	"editor.tabSize": 2,
+	"liveServer.settings.donotVerifyTags": true,
+	"better-comments.tags": [
+		{
+			"tag": "^",
+			"color": "#ffffff",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "&",
+			"color": "#a020f0",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "$",
+			"color": "#00ff00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "£",
+			"color": "#7a11f8",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "#",
+			"color": "#22ddff",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "@",
+			"color": "#88c999",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+
+		{
+			"tag": "?",
+			"color": "#3498DB",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	],
+	"html.format.contentUnformatted": "",
+	"explorer.confirmDragAndDrop": false,
+	"prettier.singleQuote": false,
+	"prettier.jsxSingleQuote": false,
+	"prettier.eslintIntegration": true,
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"workbench.editor.limit.enabled": true,
+	"workbench.editor.limit.perEditorGroup": true,
+	"workbench.editor.limit.value": 5,
+	"workbench.startupEditor": "none",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.tree.enableStickyScroll": false,
+	// "workbench.colorCustomizations": {
+	// 	"editorCursor.foreground": "#d9ff00",
+	// 	"terminalCursor.foreground": "#d9ff00"
+	// },
+	"output.smartScroll.enabled": false,
+	"cSpell.userWords": [
+		"Abdulmuhaimin",
+		"Ahad",
+		"airco",
+		"Alamgir",
+		"Arslan",
+		"AWAIS",
+		"Bilal",
+		"callme",
+		"Consolas",
+		"Conv",
+		"donot",
+		"Ducati",
+		"esbenp",
+		"fira",
+		"Flexbox",
+		"fltr",
+		"Hege",
+		"hexa",
+		"Javac",
+		"kodyfier",
+		"MERN",
+		"MEVN",
+		"Muhaimin",
+		"Nilsen",
+		"onmouse",
+		"opbot",
+		"panigale",
+		"Sequelize",
+		"srch",
+		"Waqas",
+		"wewe",
+		"yoyoyoyoyoyoyoyo"
+	],
+	"window.titleBarStyle": "custom",
+	"tabnine.experimentalAutoImports": true
+	// "editor.tokenColorCustomizations": {
+	//   "[Material Theme]": {
+	//     "comments": ""
+	//   }
+	// }
+	// "module.exports" = {
+	// 	arrowParens: 'avoid',
+	// 	bracketSpacing: false,
+	// 	singleQuote: true,
+	// 	trailingComma: 'all',
+	// 	overrides: [
+	// 	  {
+	// 		files: '*.svg',
+	// 		options: {
+	// 		  parser: 'html',
+	// 		  htmlWhitespaceSensitivity: 'ignore',
+	// 		},
+	// 	  },
+	// 	],
+	//   };
+}

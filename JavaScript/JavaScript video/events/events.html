@@ -1,0 +1,69 @@
+<!--? In JavaScript,There are several ways to attach event handlers to HTML elements. -->
+<!--? Here are 3 common methods: -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            margin-bottom: 2.4rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== Start Inline Event ========== -->
+    <h1>Inline Event</h1>
+    <button onclick="alert('Welcome to this page 1')">Greeting</button>
+    <button ondblclick="alert('Welcome to this page 2')">Greeting Again</button>
+
+    <button onmouse="alert('Welcome to this page 1')">Greeting</button>
+    <!-- ========== End Inline Event ========== -->
+
+    <!-- ========== Start DOM Event Handler ========== -->
+    <h1>DOM Event Handler</h1>
+    <button id="myBtn">Greeting</button>
+    <button id="myBtn1">Greeting Again</button>
+    <!-- ========== End DOM Event Handler ========== -->
+
+    <!-- ========== Start addEventListener Event Handler ========== -->
+    <h1>DOM Event Handler</h1>
+    <button id="myBtn2">Greeting</button>
+    <button id="myBtn3">Greeting Again</button>
+    <!-- ========== End addEventListener Event Handler ========== -->
+
+    <script>
+        // document.getElementById('myBtn').onclick = () => {
+        //     alert('welcome');
+        // }
+
+        // document.getElementById("myBtn").onclick = function () {
+        //     alert("welcome to our page");
+        // };
+
+        // document.getElementById('myBtn1').onmouseover = () => {
+        //     alert('thank you for pressing this button');
+        // };
+
+        // addEventListener
+        // document.getElementById('myBtn2').addEventListener('click', () => {
+        //     alert('this id proof you are not working hard')
+        // })
+
+        // document.getElementById('myBtn3').addEventListener('mouseover', () => {
+        //     alert('just keep working hard son')
+        // })
+        //     alert('thank you for pressing this button');
+        // };
+
+    </script>
+
+</body>
+
+</html>

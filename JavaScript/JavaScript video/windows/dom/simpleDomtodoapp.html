@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple DOM todo app</title>
+		<link rel="stylesheet" href="../style.css" />
+		<style>
+			body {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Simple DOM todo APP</h1>
+			<input type="text" id="inputField" />
+			<button class="btn">Click me</button>
+			<div class="todoListElem"></div>
+		</div>
+
+		<script>
+			let inputElem = document.getElementById("inputField");
+			let clickBtn = document.querySelector(".btn");
+			let todoElem = document.querySelector(".todoListElem");
+			// let toDoFirst = document.getElementById("toDoFirst");
+
+			const addToDo = () => {
+				console.log(inputElem.value);
+				// toDoFirst.textContent = inputElem.value;
+				let pElem = document.createElement("p");
+				pElem.textContent = inputElem.value;
+				console.log(pElem);
+				todoElem.append(pElem);
+				inputElem.value = "";
+			};
+
+			clickBtn.addEventListener("click", () => {
+				addToDo();
+			});
+
+			todoElem.addEventListener("click", (event) => {
+				console.log(event.target);
+				let curElem = event.target;
+				curElem.remove();
+			});
+		</script>
+	</body>
+</html>

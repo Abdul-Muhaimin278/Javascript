@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			#container {
+				width: 400px;
+				height: 400px;
+				position: relative;
+				background: yellow;
+			}
+
+			#animate {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				background: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<button onclick="checkCookie()">Cookie</button>
+
+		<!-- <button onclick="clickCount()" type="button">Count</button>
+		<div id="result"></div> -->
+
+		<!-- <input id="id1" type="number" min="100" max="300 " required />
+		<button onclick="myFunction()">OK</button> -->
+
+		<!-- <p>Click the button to get your coordinates.</p>
+
+  <button onclick="getLocation()">Try It</button>
+
+  <p id="demo"></p> -->
+
+		<!-- <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+  </div> -->
+
+		<!-- <p><button onclick="myMove()">Click Me</button></p>
+		<div id="container">
+			<div id="animate"></div>
+		</div>
+		 <form name="myForm" onsubmit="return validateForm()">
+    Name: <input type="text" name="fname" required>
+    <input type="submit" value="Submit">
+  </form> -->
+
+		<script>
+			function setCookie(cname, cvalue) {
+				document.cookie =
+					cname + "=" + cvalue + ";" + "Max-age = 3000" + "path=/";
+			}
+			// function setCookie(cname, cvalue, exdays) {
+			// 	const d = new Date();
+			// 	d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+			// 	let expires = " expire=" + d.toUTCString();
+			// 	console.log(expires);
+			// 	document.cookie =
+			// 		cname + "=" + cvalue + ";" + "Max-age = 3000" + ";path=/";
+			// }
+
+			function getCookie(cname) {
+				let name = cname + "=";
+				let ca = document.cookie.split(";");
+				for (let i = 0; i < ca.length; i++) {
+					let c = ca[i];
+					while (c.charAt(0) == " ") {
+						c = c.substring(1);
+					}
+					if (c.indexOf(name) == 0) {
+						return c.substring(name.length, c.length);
+					}
+				}
+				return "";
+			}
+
+			function checkCookie() {
+				let user = getCookie("name");
+				if (user != "") {
+					alert("welcome again " + user);
+				} else {
+					user = prompt("Please enter your name:", "");
+					if (user != "" && user != null) {
+						setCookie("name", user);
+					}
+				}
+			}
+
+			// function clickCount() {
+			// 	document.cookie =
+			// 		"username = John; expires=Tue, 9 July 2024 11:39:00 UTC; path=/W3schools2.html";
+			// }
+			// function removeCookie() {
+			// 	document.cookie =
+			// 		"username=John; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/W3schools2.html";
+			// }
+
+			// function clickCount() {
+			// 	if (typeof Storage !== "undefined") {
+			// 		if (sessionStorage.clickCount) {
+			// 			console.log(sessionStorage.clickCount);
+			// 			sessionStorage.clickCount = Number(sessionStorage.clickCount) + 1;
+			// 		} else {
+			// 			sessionStorage.clickCount = 1;
+			// 		}
+			// 		document.getElementById("result").innerHTML =
+			// 			"you have clicked the button " +
+			// 			sessionStorage.clickCount +
+			// 			" time(s) in this session";
+			// 	} else {
+			// 		document.getElementById("result").innerHTML =
+			// 			"Sorry, Your web browser does not support web storage";
+			// 	}
+			// }
+
+			// function clickCount() {
+			// 	if (typeof Storage !== "undefined") {
+			// 		if (localStorage.clickCount) {
+			// 			localStorage.clickCount = Number(localStorage.clickCount) + 1;
+			// 		} else {
+			// 			localStorage.clickCount = 1;
+			// 		}
+			// 		document.getElementById("result").innerHTML =
+			// 			"you have clicked the button " +
+			// 			localStorage.clickCount +
+			// 			"time(s)";
+			// 	} else {
+			// 		document.getElementById("result").innerHTML =
+			// 			"Sorry, your browser does not support web storage";
+			// 	}
+			// }
+
+			// function myFunction() {
+			// 	const inpObj = document.getElementById("id1");
+			// 	if (!inpObj.checkValidity()) {
+			// 		document.getElementById("demo").innerHTML =
+			// 			inputObj.validationMessage;
+			// 	} else {
+			// 		document.getElementById("demo").innerHTML = "Input OK";
+			// 	}
+			// }
+
+			// const myElement = document.getElementById('demo')
+
+			// function getLocation() {
+			//   if (navigator.geolocation) {
+			//     navigator.geolocation.getCurrentLocation(showPosition)
+			//   } else {
+			//     myElement.innerHTML = 'YOur browser does not support geolocation'
+			//   }
+			// }
+
+			// function showPosition(position) {
+			//   myElement.innerHTML = 'Latitude ' + position.coords.latitude + 'br' + 'longitude' + position.coords.longitude
+			// }
+
+			// const para = document.createElement('p')
+			// const node = document.createTextNode('Let him cook')
+			// para.appendChild(node)
+
+			// const element = document.getElementById('div1')
+			// const child = document.getElementById('p1')
+			// element.insertBefore(para, child)
+			// element.appendChild(para)
+
+			// function myMove() {
+			// 	let elem = document.getElementById("animate");
+			// 	let stop = "";
+			// 	let start = 0;
+			// 	stop = setInterval(div, 1);
+			// 	function div() {
+			// 		if (start === 350) {
+			// 			clearInterval(stop);
+			// 		} else {
+			// 			start++;
+			// 			elem.style.top = start + "px";
+			// 			elem.style.left = start + "px";
+			// 		}
+			// 	}
+			// }
+			// function validateForm() {
+			//   let x = document.forms['myForm']['fname'].value
+			//   if (isNaN(x) || x <= 0 || x > 10) {
+			//     alert('please enter valid numbers')
+			//     return false
+			//   }
+			//}
+		</script>
+	</body>
+</html>

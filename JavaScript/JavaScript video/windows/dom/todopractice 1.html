@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To Do Practice 1</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			body {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<h1>Simple ToDo App Practice</h1>
+			<input type="text" id="inputField" />
+			<button class="btn">Add</button>
+			<div class="todoListsElem"></div>
+		</div>
+
+		<script>
+			let inputElem = document.getElementById("inputField");
+			let todoList = document.querySelector(".todoListsElem");
+			let clickBtn = document.querySelector(".btn");
+
+			const addToDo = () => {
+				// console.log(inputElem.value);
+				let pElem = document.createElement("p");
+				console.log(inputElem.value);
+				pElem.textContent = inputElem.value;
+				todoList.append(pElem);
+				// console.log(pElem);
+				inputElem.value = "";
+			};
+
+			clickBtn.addEventListener("click", () => {
+				addToDo();
+			});
+
+			todoList.addEventListener("click", (event) => {
+				let curElem = event.target;
+				curElem.remove();
+			});
+		</script>
+	</body>
+</html>

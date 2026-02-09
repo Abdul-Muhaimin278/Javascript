@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Basic Calculator</title>
+		<script type="text/javascript">
+			function calculator() {
+				// Ask the user to choose an operation
+				var operation = prompt(
+					"Choose an operation:\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Division"
+				);
+
+				// Convert the operation to a number
+				// operation = parseInt(operation);
+
+				// Check if the operation is valid
+				if (operation < 1 || operation > 4 || isNaN(operation)) {
+					alert("Invalid operation. Please refresh and try again.");
+					return;
+				}
+
+				// Prompt the user to enter the first number
+				var num1 = prompt("Enter the first number:");
+				// Convert the first number to a float
+				num1 = parseFloat(num1);
+
+				// Prompt the user to enter the second number
+				var num2 = prompt("Enter the second number:");
+				// Convert the second number to a float
+				num2 = parseFloat(num2);
+
+				// Check if the numbers are valid
+				if (isNaN(num1) || isNaN(num2)) {
+					alert("Invalid numbers. Please refresh and try again.");
+					return;
+				}
+
+				// Initialize a variable for the result
+				var result;
+
+				// Perform the chosen operation
+				switch (operation) {
+					case 1:
+						result = num1 + num2;
+						break;
+					case 2:
+						result = num1 - num2;
+						break;
+					case 3:
+						result = num1 * num2;
+						break;
+					case 4:
+						// Check if the second number is zero for division
+						if (num2 === 0) {
+							alert("Cannot divide by zero. Please refresh and try again.");
+							return;
+						}
+						result = num1 / num2;
+						break;
+					default:
+						alert("Invalid operation. Please refresh and try again.");
+						return;
+				}
+
+				// Display the result
+				"The result is: " + result;
+			}
+		</script>
+	</head>
+	<body onload="calculator()"></body>
+</html>
